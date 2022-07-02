@@ -1,5 +1,5 @@
 const clientId = 'df0ed28c3b2e4ba49a13325a0c0f3bae';
-const redirectURI = 'http://jamming-yacine.surge.sh';
+const redirectURI = 'https://jamming-yacine.netlify.app/';
 let userToken;
 
 const Spotify = {
