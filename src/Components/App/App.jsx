@@ -42,9 +42,10 @@ export class App extends React.Component {
   }
 
   removeTrack(track) {
-    const { playlistTracks } = this.state;
+    const { playlistTracks, searchResults } = this.state;
     this.setState({
-      playlistTracks: playlistTracks.filter(playlistTrack => track.id !== playlistTrack.id)
+      playlistTracks: playlistTracks.filter(playlistTrack => track.id !== playlistTrack.id),
+      searchResults: searchResults.push(track)
     });
   }
 
